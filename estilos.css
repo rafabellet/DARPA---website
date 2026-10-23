@@ -1,0 +1,317 @@
+@charset "UTF-8";
+header#cabecalho{
+	border-bottom: solid 2px gray;
+}
+
+img#logo{
+position: absolute;
+top: 5px;
+left: 3px;
+}
+
+header#cabecalho img.fotomenu{
+position: absolute;
+top: 70px;
+right: 80px;
+}
+
+footer#rodape{
+	border-top: solid 2px gray;
+	text-align: center;
+}
+
+hgroup.titulos h1{
+	text-transform: uppercase;
+	/**text-decoration: underline;*/
+	font-size: 30pt;
+	letter-spacing: -20px;
+	border-radius: 20px;
+	width: 37%;
+	transition: all 2s;
+}
+
+hgroup.titulos h1:hover{
+	letter-spacing: 6px;
+	background-color: darkblue;
+	color: white;
+	box-shadow: 6px 6px 6px gray;
+}
+
+figure.outrasFotos{
+	/**border: solid 3px rgb(0, 0, 225);**/
+	background-color: lightgray;
+	text-align:center;
+	box-shadow: 0px 0px 20px #000000;
+	border-radius: 80px;	
+}
+ figure.foto1 img{
+ 	width: 95%;
+	height: 150px;
+	
+}
+
+figure.foto1{
+	background-color: lightblue;
+	box-shadow: 6px 6px 6px gray;
+	border: solid 8px #000000;
+	border-radius: 10px;
+	text-align: center;
+	width: 25%;
+	padding-top: 5px;
+	float: right;
+	transition: 1.5s;
+}
+
+ figure.foto1:hover{
+ 	transition: 1.5s;
+ 	transform: rotateZ(10deg);
+ }
+
+figure.foto1 h4{
+margin-top: -4px;	
+margin-bottom: 0px;
+background-color: yellow;
+}
+
+span.texto{
+	text-align: justify;
+	font-size: 16pt;
+	font-family: 'Sedgwick Ave Display', cursive;
+	text-indent: 50px; 
+}
+
+
+body#corpo{
+	background: url(Imagens/fundo.jpg);
+}
+
+/**Formatação do menu principal*/
+nav#menu h3{
+display: none;
+}
+
+nav#menu ol{
+list-style: none;
+text-transform: uppercase;
+position: absolute;
+top: 0px;
+right: 60px;
+}
+
+nav#menu li{
+display: inline-block;
+background-color: lightgray;
+padding: 10px;
+margin: 3 px;
+border-radius: 10px;
+transition: all 2s;
+transition: transform 1s;
+}
+
+nav#menu li:hover{
+background-color: darkgray;
+transition: all 2s;
+transform: rotateZ(-15deg);
+transition: transform 1s;
+}
+
+nav#menu a{
+color: black;
+text-decoration: none;
+}
+
+ nav#menu a:hover{
+color:white;
+text-decoration: underline;
+ }
+
+
+
+article#conteudo {
+margin: left 15px;
+}
+
+/**Formatação dos títulos do article*/
+article#conteudo h1{
+background-color: #999999;
+text-shadow: 2px 2px 2px #FFE645;
+font-size: 25pt;
+text-align: center;
+transition: 1s;
+}
+
+article#conteudo h1:hover{
+letter-spacing: 30px;
+transition: 1s;
+}
+
+/**Tabela de produtos*/
+table.tabela {
+	background-color: white;
+	border: solid black 1px;
+	border-spacing: 0px;
+	text-align: center;
+}
+
+table.tabela td{
+	border: solid black 1px;
+	transition: all 1s;
+	background-color: white;
+}
+
+table.tabela th{
+	border: solid black 1px;
+	background-color: white;	
+}
+
+table.tabela td:hover{
+	background-color: black;
+	border-radius: 30px;
+	color: white;
+	transition: all 1s;
+}
+table.tabela img{
+	width: 70px;
+	position: center;
+}
+
+table.tabela caption{
+background-color: gray;
+}
+
+table.tabela h5{
+	text-align: center;
+}
+
+iframe.video1{
+	 position: absolute;
+    top: 300px;
+    left: 600px;
+}
+iframe.video2{
+	 position: absolute;
+    top: 650px;
+    left: 600px;
+}
+iframe.video3{
+	 position: absolute;
+    top: 1000px;
+    left: 600px;
+}
+
+div.container_videos{
+	display: flex;
+	gap: 65px;	
+}
+
+div.videos{
+	flex: auto;
+	text-align: center;
+	color: purple;
+}
+
+div.videos iframe{
+width: 100%;
+aspect-ratio:16/9;
+border-radius: 30px;	
+border: 3px solid purple;
+}
+
+/**Localização*/
+iframe.mapa{
+	width: 100%;
+}
+
+
+section.centralizar{
+	text-align: center;
+	font-size: 15pt;
+}
+
+table.horarios{
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	border: rgb(68, 202, 251) solid 5px;
+}
+
+table.horarios th, td {
+	border:white solid 5px;
+    padding: 5px;
+    text-align: center;
+	font-size: 15pt;
+	background-color: rgb(185, 236, 255);
+}
+
+table.horarios th {
+	background-color: rgb(103, 215, 255);
+	border:white solid 5px;
+    padding: 5px;
+    text-align: center;
+	font-size: 17pt;
+}
+
+details.faq{
+	text-align: left;
+	font-size: 15pt;
+	padding: 12px;
+	border: #FFE645 solid 5px;
+	background-color: white;
+	font-family: 'Sedgwick Ave Display', cursive;
+}
+
+details.faq summary{
+	font-weight: bold;
+}
+
+
+/**Fotos da turma*/
+
+ul.album {
+	max-width: 100%;
+	list-style: none;
+	display: flex;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 40px;
+}
+
+
+ul.album li{
+	background: var(--img) center / cover no-repeat;
+	width: 200px;
+	height: 300px;
+	border: 5px solid rgb(103, 215, 255);
+	text-align: center;
+	font-family: Arial;
+	transition: all 1.5s ease;
+	position: relative;
+}
+
+ul.album li:hover {
+	background-image: var(--img-hover, var(--img));   /*coloca a imagem 2 na frente*/
+	transform: scale(1.3);   /*Cresce a imagem*/
+	z-index: 10;   /*coloca o de maior valor na frente*/
+	border-radius: 40px;
+}
+
+ul.album li span{
+	opacity: 0;
+	color: white;
+	text-shadow: 1px 1px 2px #000000;
+	background-color: rgba (0,0,0, 0.5);
+	font-size: 8pt;
+	padding: 10px;
+	transition: opacity 1.2s;
+	display: flex;
+	align-items: end;
+	justify-content: center;
+	height: 100%;
+	box-sizing: border-box;
+
+}
+
+ul.album li:hover span{
+	opacity: 10;
+}
